@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: karla, sans-serif;
+  background-color: #f7f7f7;
+  padding: 0 10px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 218px;
+  background-color: #f7f7f7;
+}
+.navigation__title {
+  margin: 0;
+  font-family: unica one, cursive;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 1.875em;
+  margin-bottom: 35px;
+}
+.navigation__container {
+  display: flex;
+}
+.navigation__filter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navigation__sort {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navigation__label {
+  margin-bottom: 16px;
+  line-height: 1.375;
+  font-size: 0.75em;
+  font-weight: 700;
+  color: #666;
+}
+.navigation__select {
+  background-color: transparent;
+  font-weight: 700;
+  padding-top: 6.66667px;
+  padding-bottom: 6.66667px;
+  padding-left: 6.66667px;
+  width: 150px;
+  height: 37px;
+  border: 1px solid #dedede;
+  appearance: none;
+  background-image: url(//cdn.shopify.com/s/files/1/0938/8938/t/18/assets/ico-select.svg?v=1245925112819775442);
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f7f7f7;
+  max-width: 712px;
+}
+
+.product-card {
+  border-color: #f7f7f7;
+  border-style: solid;
+  border-width: 0 0 1px 1px;
+  padding: 12px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 50%;
+  max-width: 356px;
+}
+.product-card__img {
+  max-width: 100%;
+  max-height: 234px;
+}
+.product-card__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 12px;
+}
+.product-card__name {
+  margin: 0;
+  font-weight: 700;
+  color: #030303;
+  font-size: 16px;
+  line-height: 1.375;
+}
+.product-card__price {
+  margin: 0;
+  font-size: 0.875em;
+  font-weight: 400;
+  color: #666;
+  line-height: 1.375;
+}
+
+@media (min-width: 750px) {
+  .products {
+    max-width: 1180px;
+  }
+
+  .product-card {
+    flex-basis: 20%;
+    max-width: 228px;
+  }
+  .product-card__wrapper {
+    display: flex;
+  }
+  .product-card__img {
+    flex: 1;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
